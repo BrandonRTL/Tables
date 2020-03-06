@@ -5,6 +5,10 @@ class UNSortedTABLE
 {	
 public:
 	std::vector<NamedPoly> Table;
+	UNSortedTABLE()
+	{
+
+	}
 	UNSortedTABLE(NamedPoly _Data)
 	{
 		Table.push_back(_Data);

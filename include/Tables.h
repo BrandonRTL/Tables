@@ -116,6 +116,7 @@ public:
 	{
 		std::vector<NamedPoly>::iterator it;
 		std::string key = _Data.Name;
+		/*
 		int Left = -1;
 		int Right = Table.size();
 		int Mid;
@@ -127,6 +128,10 @@ public:
 			else
 				Right = Mid;
 		}
+		*/
+		int Right = SearchByKey(key);
+		if (Right < 0)
+			Right = -(Right + 1);
 		it = Table.begin()+Right;
 		Table.insert(it,_Data);
 	}
